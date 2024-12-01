@@ -1,68 +1,96 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="node_modules\bootstrap\dist\css\bootstrap.min.css">
-    <link rel="stylesheet" href="css/footer.css">
 
-</head>
-<body>
 
 <!-- Remove the container if you want to extend the Footer to full width. -->
+<head>
+  
+<link rel="stylesheet" href="node_modules\bootstrap\dist\css\bootstrap.min.css">
+<link rel="stylesheet" href="fontawesome-free-6.7.1-web\css\fontawesome.css">
+<link rel="stylesheet" href="fontawesome-free-6.7.1-web\css\all.css">
+<link rel="stylesheet" href="fontawesome-free-6.7.1-web\css\brands.css">
+<link rel="stylesheet" href="fontawesome-free-6.7.1-web\css\solid.css">
 
-<div class="footer " style="margin: 0px;">
-  <div class="bubbles">
-    <!-- These `div.bubble` elements will be dynamically created with JavaScript -->
-  </div>
-  <div class="content d-flex justify-content-center">
-    <div class="row ">
-        <div class="col-sm-6">
-          <b>Shortcuts</b>
-          <hr>
-          <a href="">Home</a>
-          <a href="">FAQS</a>
-          <br>
-          <a href="">Games</a>
-          <a href="">Contact Us </a>
-          <a href="">About Us</a>
-        </div>
-        
-    </div>
-    <div class=" d-flex justify-content-center">
-      <img src="websiteAsset/BrandName.png" style="max-width: 200px;">
-      
-      
-    </div>
-    
-  </div>
-</div>
-<svg style="position:fixed; top:100vh;">
-  <defs>
-    <filter id="blob">
-      <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
-      <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="blob" />
-    </filter>
-  </defs>
-</svg>
+<link rel="stylesheet" href="css/footer.css">
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</head>
 
-    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-      const bubblesContainer = document.querySelector('.bubbles');
 
-      for (let i = 0; i < 128; i++) {
-        const bubble = document.createElement('div');
-        bubble.className = 'bubble';
-        bubble.style.setProperty('--size', `${2 + Math.random() * 4}rem`);
-        bubble.style.setProperty('--distance', `${6 + Math.random() * 4}rem`);
-        bubble.style.setProperty('--position', `${-5 + Math.random() * 110}%`);
-        bubble.style.setProperty('--time', `${2 + Math.random() * 2}s`);
-        bubble.style.setProperty('--delay', `${-1 * (2 + Math.random() * 2)}s`);
-        bubblesContainer.appendChild(bubble);
-}
 
-    </script>
+<!------ Include the above in your HEAD tag ---------->
 
-</body>
-</html>
+
+        <!--footer-->
+        <footer class="new_footer_area bg_color">
+            <div class="new_footer_top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6">
+                            <div class="f_widget company_widget wow fadeInLeft" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInLeft;">
+                                <h3 class="f-title f_600 t_color f_size_18">Get in Touch</h3>
+                                <p class="text-white">Don’t miss any updates of our new templates and extensions.!</p>
+                                <form action="#" class="f_subscribe_two mailchimp" method="post" novalidate="true" _lpchecked="1">
+                                    <input type="text" name="EMAIL" class="form-control memail" placeholder="Email">
+                                    <button class="btn btn_get btn_get_two" type="submit">Subscribe</button>
+                                    <p class="mchimp-errmessage" style="display: none;"></p>
+                                    <p class="mchimp-sucmessage" style="display: none;"></p>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInLeft;">
+                                <h3 class="f-title f_600 t_color f_size_18">Download</h3>
+                                <ul class="list-unstyled f_list">
+                                    <li><a class="text-white" style="text-decoration: none;" href="#">Company</a></li>
+                                    <li><a class="text-white" style="text-decoration: none;" href="#">Android App</a></li>
+                                    <li><a class="text-white" style="text-decoration: none;" href="#">ios App</a></li>
+                                    <li><a class="text-white" style="text-decoration: none;" href="#">Desktop</a></li>
+                                    <li><a class="text-white" style="text-decoration: none;" href="#">Projects</a></li>
+                                    <li><a class="text-white" style="text-decoration: none;" href="#">My tasks</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.6s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInLeft;">
+                                <h3 class="f-title f_600 t_color f_size_18">Help</h3>
+                                <ul class="list-unstyled f_list">
+                                    <li><a class="text-white" style="text-decoration: none;" href="#">FAQ</a></li>
+                                    <li><a class="text-white" style="text-decoration: none;" href="#">Term &amp; conditions</a></li>
+                                    <li><a class="text-white" style="text-decoration: none;" href="#">Reporting</a></li>
+                                    <li><a class="text-white" style="text-decoration: none;" href="#">Documentation</a></li>
+                                    <li><a class="text-white" style="text-decoration: none;" href="#">Support Policy</a></li>
+                                    <li><a class="text-white" style="text-decoration: none;" href="#">Privacy</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="f_widget social-widget pl_70 wow fadeInLeft" data-wow-delay="0.8s" style="visibility: visible; animation-delay: 0.8s; animation-name: fadeInLeft;">
+                                <h3 class="f-title f_600 t_color f_size_18">Team Solutions</h3>
+                                <div class="f_social_icon">
+                                    <a style="text-decoration: none;" href="#" class="fab fa-facebook"></a>
+                                    <a style="text-decoration: none;" href="#" class="fab fa-twitter"></a>
+                                    <a style="text-decoration: none;" href="#" class="fab fa-linkedin"></a>
+                                    <a style="text-decoration: none;" href="#" class="fab fa-pinterest"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_bg">
+                    <div class="footer_bg_one"></div>
+                    <div class="footer_bg_two"></div>
+                </div>
+            </div>
+            <div class="footer_bottom">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 col-sm-7">
+                            
+                        </div>
+                        <div class="col-lg-6 col-sm-5 text-right">
+                            <p class="text-white">Made with <i class="icon_heart"></i> in <a href="http://cakecounter.com" target="_blank">CakeCounter</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
