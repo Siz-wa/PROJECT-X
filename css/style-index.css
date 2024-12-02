@@ -1,10 +1,14 @@
 
 .background-image {
-    height: 600px;
-    background-image: url("/websiteAsset/bg.jpg"); /* Replace with your image path */
+    height: 800px;
+    
+    background-image:linear-gradient(to right, rgba(0, 0, 0, 0.616) , rgba(255, 255, 0, 0)) ,url("/websiteAsset/bg.jpg"); /* Replace with your image path */
     background-size: cover; /* Ensures the image covers the entire area */
     background-position: center; /* Centers the image */
     background-repeat: no-repeat; /* Prevents repeating the image */
+
+
+    
     
     
 }
